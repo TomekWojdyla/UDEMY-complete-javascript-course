@@ -119,9 +119,9 @@ btnNew.addEventListener('click', init);
 btnManual.addEventListener('click', function () {
   manual.classList.remove('hidden');
   overlay.classList.remove('hidden');
-  document.getElementById(
-    'manualText'
-  ).innerHTML = `<h2 class="name">PIG GAME MANUAL</h2>
+  document.getElementById('manualText').innerHTML = `
+      <button class="close--manual" onclick="closeManual()">&times;</button>
+      <h2 class="name">PIG GAME MANUAL</h2>
       <p class="current-score">1. Player 1 starts the game and rolls the dice.</p>
       <p class="current-score">2. If the number on the dice is different than '1', the number is added to current score.</p>
       <p class="current-score">3. Player can continue rolling the dice or 'Hold' and save current score to his total score.</p>
